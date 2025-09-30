@@ -1,0 +1,40 @@
+[package]
+name = "libfmod-demos"
+version = "0.1.0"
+edition = "2024"
+authors = ["chainhackers"]
+description = "Interactive demos and test harnesses for libfmod Rust bindings to FMOD Engine"
+repository = "https://github.com/chainhackers/libfmod-demos"
+license = "MIT"
+
+[dependencies]
+libfmod = { git = "https://github.com/chainhackers/libfmod", branch = "main" }
+crossterm = "0.27"
+
+[[example]]
+name = "harness_demo"
+
+[[example]]
+name = "interactive_harness"
+
+[[example]]
+name = "play_sound"
+
+[[example]]
+name = "verify_fmod"
+
+[[example]]
+name = "quick_test"
+
+[[example]]
+name = "studio_banks_test"
+
+[[example]]
+name = "studio_events_test"
+
+[[example]]
+name = "studio_parameters_test"
+
+[[test]]
+name = "manual"
+harness = false
