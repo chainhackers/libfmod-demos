@@ -35,6 +35,3 @@ name = "studio_events_test"
 [[example]]
 name = "studio_parameters_test"
 
-[[test]]
-name = "manual"
-harness = false

@@ -13,7 +13,8 @@ use libfmod::{
 #[test]
 fn test_core_system_initialization() -> Result<(), Error> {
     let system = System::create()?;
-    system.init(512, FMOD_INIT_NORMAL, None)
+    system.init(512, FMOD_INIT_NORMAL, None)?;
+    system.release()
 }
 
 #[test]
